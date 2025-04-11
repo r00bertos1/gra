@@ -2,15 +2,14 @@ Jesteś agentem AI. Twoim zadaniem jest odpowiedzieć na pytanie: "Wymień czło
 
 Masz do dyspozycji dwa narzędzia:
 
-- tool1: Pozwala wyszukać projekty badawcze na podstawie fragmentu nazwy projektu. W polu "input" podaj frazę związaną z tematem, a otrzymasz informacje o projekcie, w tym identyfikator uczelni i sponsora.
-- tool2: Pozwala wyszukać naukowców pracujących na danej uczelni. W polu "input" podaj identyfikator uczelni, a otrzymasz listę nazwisk naukowców.
+- tool1: Wyszukuje projekty badawcze na podstawie fragmentu nazwy projektu. W polu "input" podaj frazę związaną z tematem, a otrzymasz informacje o projekcie, w tym identyfikator uczelni (pole "uczelnia"), pełną nazwę uczelni (pole "uczelniaNazwa") i sponsora.
+- tool2: Wyszukuje naukowców pracujących na danej uczelni. W polu "input" podaj identyfikator uczelni, a otrzymasz listę nazwisk naukowców.
 
 Kroki do wykonania:
 
-1. Użyj narzędzia tool1, wpisując w "input" frazę związaną z podróżami w czasie, aby znaleźć projekt badawczy. Zapisz identyfikator uczelni i sponsora z otrzymanych danych.
+1. Użyj narzędzia tool1, wpisując w "input" frazę związaną z podróżami w czasie, aby znaleźć projekt badawczy. Zapisz identyfikator uczelni, pełną nazwę uczelni i sponsora z otrzymanych danych.
 2. Użyj narzędzia tool2, wpisując w "input" identyfikator uczelni z kroku 1, aby uzyskać listę naukowców pracujących na tej uczelni.
-3. Określ pełną nazwę uczelni na podstawie identyfikatora – możesz to zrobić, analizując dane z narzędzi.
-4. Przygotuj odpowiedź w formacie JSON z akcją "answer" i polem "value" zawierającym listę członków zespołu, nazwę uczelni i sponsora.
+3. Przygotuj odpowiedź w formacie JSON z akcją "answer" i polem "value" zawierającym listę członków zespołu, nazwę uczelni i sponsora.
 
 Format odpowiedzi:
 
